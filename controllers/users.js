@@ -1,4 +1,4 @@
-const express = require('express');
+ const express = require('express');
 
 //RESTFUL => GET, POST, PUT, PATCH y DELETE
 //MODELO = (Una estructura de datos que representa una entidad del mundo real)
@@ -11,7 +11,9 @@ function index(req, res, next){
 }
 
 function create(req, res, next){
-    res.send('Crear un usuario nuevo');
+  const name = req.body.name;
+  const lastName = req.body.lastName;
+    res.send(`Crear un usuario nuevo con nombre ${name} y apellido ${lastName} `);
 }
 
 function replace(req, res, next){
