@@ -1,5 +1,5 @@
 FROM node
-MAINTAINER Daniel Lopez
+MAINTAINER Alex Baca
 WORKDIR /app
 COPY . .
 RUN npm install
